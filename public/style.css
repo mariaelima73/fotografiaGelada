@@ -1,0 +1,14 @@
+.cabecalho, .rsocial, .rodape {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    border-color: rgb(22, 22, 22);
+}
+.rodape{
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+}
