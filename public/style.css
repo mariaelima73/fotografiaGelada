@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .cabecalho, .rsocial, .rodape{
     display: flex;
     justify-content: space-between;
@@ -13,103 +16,49 @@
     background-color: rgb(22, 22, 22);
     color: rgb(255, 255, 255);
 }
-/* .image1 {
-    background-image: url('imagens/Everest.jpg');
-    width: 100%;
-    height: 640px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 10px 15px 15px 90px; cdbe
-}
-.image2 {
-    background-image: url('imagens/AlpesSuiços.jpg');
-    width: 50%;
-    height: 640px;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 15px 15px 15px 10px;
-}
-.image3 {
-    background-image: url('imagens/GrandCanyon.jpg');
-    width: 50%;
-    height: 640px;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 15px;
-}
-.image4 {
-    background-image: url('imagens/MonteFuji.jpg');
-    width: 33.3%;
-    height: 1310px;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: 80%;
-    margin: 10px 10px 15px 15px;
-} */
-/* .image5 {
-    background-image: url('imagens/MonteBranco.jpg');
-    width: 32.5%;
-    height: 1310px;
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: 80%;
-    margin: 10px 10px 15px 10px;
-}
-.image6 {
-    background-image: url('imagens/MonteElbrus.jpg');
-    width: 98.5%;
-    height: 640px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 15px 10px 15px 15px;
-}
-.image7 {
-    background-image: url('imagens/PicoPikes.jpg');
-    width: 66%;
-    height: 640px;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 15px 15px 10px 15px;
-}
-.image8 {
-    background-image: url('imagens/Huandoy.jpg');
-    width: 66%;
-    height: 640px;
-    background-size: 140%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    margin: 15px;
-} */
-/* .twoimg1 {
-    display: flex;
-}
-.threeimg1 {
-    width: 66%;
-}
-.mainimg1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-} */
-.mainimg1 {
+.parent {
+    height: 100vh;
+    margin: 10px 200px 10px 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    }
-    
-.image1 { grid-area: 1 / 1 / 2 / 3; }
-.image2 { grid-area: 2 / 1 / 3 / 2; }
-.image3 { grid-area: 2 / 2 / 3 / 3; }
-.image4 { grid-area: 1 / 3 / 3 / 4; }
-.mainimg1 img {
-    width: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+}
+.parent div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-image: url('imagens/Everest.jpg');
+}
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url('imagens/AlpesSuiços.jpg');
+}
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url('imagens/GrandCanyon.jpg');
+}
+.div4 {
+    grid-area: 1 / 3 / 3 / 4;
+    background-image: url('imagens/MonteFuji.jpg');
+}
+.div5 {
+    grid-area: 3 / 1 / 5 / 2;
+    background-image: url('imagens/MonteBranco.jpg');
+}
+.div6 {
+    grid-area: 3 / 2 / 4 / 4;
+    background-image: url('imagens/MonteElbrus.jpg');
+}
+.div7 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url('imagens/PicoPikes.jpg');
+}
+.div8 {
+    grid-area: 4 / 3 / 5 / 4;
+    background-image: url('imagens/Huandoy.jpg');
 }
